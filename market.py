@@ -1,16 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)  # Initialize Flask, get local python file name
 
 
 @app.route('/')  # Decorator, website navigation
-def hello_world():  # put application's code here
-    return '<h1>Hello World</h1>'
-
-@app.route('/about/<username>')     # Receive any string after about
-def about_page(username):
-    return f'<h1>This is the about page of {username}</h1>'
-
+@app.route('/home')
+def home_page():  # put application's code here
+    return render_template('home.html')    # Importing template from templates folder
 
 if __name__ == '__main__':
     app.run()
