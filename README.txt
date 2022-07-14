@@ -1,2 +1,2 @@
-Project created following:
+Project created by following:
 https://www.youtube.com/watch?v=Qr4QMBUPxWo
